@@ -2,7 +2,7 @@
 
 ## Descripción
 Primer proyecto prueba utilizando como tecnología principal REACT. 
-La aplicación es una plataforma en la que se visualizan vídeos populares cuenta con:
+La aplicación es una plataforma en la que se visualizan vídeos populares, cuenta con:
 - Un `header` donde se encuentra el logo de la aplicación y un menú de usuario.
 - Un apartado de `busquéda` por debajo del header.
 - Un `carousel` para visualizar los vídeos más populares.
