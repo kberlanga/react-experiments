@@ -29,24 +29,22 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(s*)css$/,
+                test: /\.css$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                        'css-loader',
-                        'sass-loader'
-                ]
-            }
+                    MiniCssExtractPlugin.loader,
+                    "css-loader", "postcss-loader",
+                    ],
+            },
         ]
     },
     plugins: [
         new htmlWebPackPlugin({
             template: './public/index.html',
-            filename:  './index.html'
+            filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'assets/[name].css'
+            filename: './styles.css',
+            chunkFilename: "styles.css"
         })
     ]
 };
